@@ -1,4 +1,4 @@
-import { useReducer, useRef } from "react";
+import { useEffect, useReducer, useRef } from "react";
 import TodoList from "./components/TodoList";
 import useLocalStorage from "./hooks/useLocalStorage";
 import { v4 as uuidv4 } from "uuid";
@@ -75,6 +75,10 @@ function App() {
         return state;
     }
   }
+
+  useEffect(() => {
+    todoRef.current.focus();
+  },[])
 
   return (
     <div className="App" data-theme={`${darkTheme ? "dark" : "light"}`}>

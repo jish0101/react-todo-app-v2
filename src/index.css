@@ -206,6 +206,11 @@ body{
   text-indent: 2.5rem;
 }
 
+.todo__header_input-container input:focus-visible {
+  border:  1px solid var(--clr-100);
+  border-radius: 5px;
+}
+
 .todo__header_input-btn {
   position: absolute;
   color: var(--clr-100);
