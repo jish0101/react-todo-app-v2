@@ -174,7 +174,8 @@ function App() {
               </button>
             </div>
           </div>
-          <div className="todo__footer_filters-sm-only">
+        </div>
+        <div className="todo__footer_filters-sm-only">
             <button
               onClick={() => setActive({ type: "all" })}
               className={`todo__filter-btn ${
@@ -200,7 +201,6 @@ function App() {
               Completed
             </button>
           </div>
-        </div>
         <p id="drag-n-drop">Drag and drop to reorder list</p>
       </div>
     </div>
