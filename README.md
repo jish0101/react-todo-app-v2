@@ -58,7 +58,7 @@ I will try to add authentication and backend api to this soon..
 
 ### Useful resources
 
-1. For deplying this project this article is useful [link](https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane)
+1. For deploying this project this article is useful [link](https://dev.to/shashannkbawa/deploying-vite-app-to-github-pages-3ane)
 
 2. For making dragable list I used Framer-motion and reorder hook
    here's the guide to it [link](https://www.framer.com/motion/reorder/#usage)
