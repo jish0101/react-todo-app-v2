@@ -5,8 +5,13 @@ import { v4 as uuidv4 } from "uuid";
 import sunIcon from "../images/icon-sun.svg";
 import moonIcon from "../images/icon-moon.svg";
 
+const tips = [
+  {id: 0, todoText: "Tap to check/uncheck todo 😊", complete: false},
+  {id: 1, todoText: "Your todos are saved in browser's storage 🚀", complete: false},
+]
+
 function App() {
-  const [todos, setTodos] = useLocalStorage("todos", []);
+  const [todos, setTodos] = useLocalStorage("todos-V2", tips);
   const [active, setActive] = useReducer(reducer, {
     all: true,
     left: false,
@@ -20,7 +25,7 @@ function App() {
     }
   });
 
-  const [darkTheme, setDarkTheme] = useLocalStorage("theme", false);
+  const [darkTheme, setDarkTheme] = useLocalStorage("theme-V2", false);
 
   function addTodo(e) {
     e.preventDefault();

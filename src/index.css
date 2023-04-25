@@ -123,7 +123,7 @@ h6 {
   --clr-todo-shadow: var(--clr-theme-light-300);
   --clr-todo-border: var(--clr-theme-light-200);
   --bg-image: url(../images/bg-desktop-light.jpg);
-  --clr-100: var(--clr-theme-light-500);
+  --clr-100: var(--clr-theme-dark-600);
 }
 
 body {
@@ -209,7 +209,8 @@ body {
 }
 
 .todo__header_input-container input:focus-visible {
-  border: 1px solid var(--clr-100);
+  border: 2px solid var(--clr-100);
+  outline: none;
   border-radius: 5px;
 }
 
